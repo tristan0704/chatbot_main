@@ -1,0 +1,129 @@
+/* ==== Global Reset ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #eceff1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==== Chat Container ==== */
+.chat-container {
+    width: 100%;
+    max-width: 420px;
+    height: 90vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+/* ==== Header ==== */
+.chat-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    background: #4a7aff;
+    color: white;
+}
+
+.chat-header img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.chat-header h2 {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.chat-header p {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+/* ==== Messages Box ==== */
+.chat-messages {
+    flex: 1;
+    padding: 14px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ==== Message Bubbles ==== */
+.message {
+    padding: 10px 14px;
+    max-width: 80%;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* User bubble right */
+.message.user {
+    align-self: flex-end;
+    background: #4a7aff;
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+/* AI bubble left */
+.message.ai {
+    align-self: flex-start;
+    background: #e0e6eb;
+    color: #111;
+    border-bottom-left-radius: 4px;
+}
+
+/* ==== Input Bar ==== */
+.chat-input-bar {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    gap: 8px;
+}
+
+.chat-input-bar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.chat-input-bar button {
+    width: 48px;
+    border: none;
+    border-radius: 10px;
+    background: #4a7aff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.chat-input-bar button:hover {
+    opacity: 0.85;
+}
+
+/* ==== Scrollbar styling (optional cool touch) ==== */
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-messages::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}

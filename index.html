@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Tristan AI Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+  <!-- Header -->
+  <div class="chat-header">
+    <img src="file.enc" alt="Profil">
+    <div>
+      <h2>Tristan AI</h2>
+      <p>Frag mich alles über Tristan</p>
+    </div>
+  </div>
+
+  <!-- Messages -->
+  <div id="chat-messages" class="chat-messages">
+    <!-- Beispiele (werden später per JS überschrieben) -->
+    <div class="message ai">Hallo! Ich bin Tristan AI. Stell mir eine Frage über Tristan.</div>
+  </div>
+
+  <!-- Input -->
+  <div class="chat-input-bar">
+    <input id="user-input" type="text" placeholder="Nachricht eingeben..." autocomplete="off">
+    <button id="send-btn">➤</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
