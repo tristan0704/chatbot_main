@@ -119,7 +119,6 @@ body {
     opacity: 0.85;
 }
 
-/* ==== Scrollbar styling (optional cool touch) ==== */
 .chat-messages::-webkit-scrollbar {
     width: 6px;
 }

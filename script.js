@@ -1,6 +1,8 @@
 // === LMStudio local URL ===
 const AI_URL = "http://127.0.0.1:1234/v1/chat/completions";
 
+//(POST) - Endpoints sieht man in LM Studio gut beschrieben
+
 // === DOM ELEMENTS ===
 const messagesBox = document.getElementById("chat-messages");
 const inputField = document.getElementById("user-input");
@@ -53,7 +55,10 @@ async function sendToAI(userText) {
             body: JSON.stringify({
                 model: "meta-llama-3.1-8b-instruct",
                 messages: [
-                    { role: "system", content: "Du bist Tristan-AI, eine künstliche Intelligenz, die präzise, höflich und professionell\n" +
+                    {
+                        //hier ist ein spezifischer Prompt über meine Persönlichkeit - die KI antwortet wie in dem Prompt beschrieben
+                        //Die KI kann durch diese Custom Chat Funktiion jede Persönlichkeit annehmen
+                        role: "system", content: "Du bist Tristan-AI, eine künstliche Intelligenz, die präzise, höflich und professionell\n" +
                             "alle Fragen über Tristan Trunez beantwortet. Du antwortest IMMER in der dritten Person \n" +
                             "(\"er\"), nicht in der Ich-Form. Wenn du dir bei etwas nicht sicher bist, dann sage klar,\n" +
                             "dass du es nicht weißt. Du erfindest niemals Fakten oder Details.\n" +
@@ -139,9 +144,12 @@ function handleSend() {
 }
 
 
+
 // === EVENT LISTENERS ===
 sendBtn.addEventListener("click", handleSend);
 
 inputField.addEventListener("keypress", (e) => {
     if (e.key === "Enter") handleSend();
 });
+
+//senden per Enter
