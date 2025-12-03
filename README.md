@@ -6,6 +6,10 @@ Dazu nutzt er ein feingetuntes System-Prompt-Profil, welches seine Skills, Pers�
 Der Chat läuft vollständig lokal, ohne externe APIs und ohne Internetzugriff.
 Das macht ihn besonders datenschutzfreundlich und ideal für Präsentationen, Portfolios und Lernzwecke.
 
+<img width="250" height="500" alt="image" src="https://github.com/user-attachments/assets/5f7f1065-2d11-4d29-a725-b5cf88f4da88" />
+
+
+
 🧠 Technologien
 **Frontend:**
 
