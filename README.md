@@ -55,7 +55,7 @@ Der Chatbot nutzt einen maßgeschneiderten System-Prompt, der folgende Bereiche 
 
 🖥️ Installation & Setup
 1. Repository klonen
-git clone https://github.com/dein-username/tristan-ai-chatbot
+git clone https://github.com/tristan0704/chatbot_main
 
 2. LMStudio installieren
 
